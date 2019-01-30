@@ -53,7 +53,7 @@ p {
 /* Title Section */
 
 #title {
-  background-color: #ff4c68;
+  background-color: #F50057;
   box-shadow: 0.5px 0.5px 1px 0 rgba(125,125,125,0.5);
   font-size: 1.5rem;
   text-align: left;
@@ -88,7 +88,7 @@ p {
 }
 
 .feature-icon {
-  color: #ff8d68;
+  color: #FF4081;
   transition: color 0.25s;
   margin-bottom: 1rem;
 }
@@ -98,16 +98,21 @@ p {
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 1.5;
+  transition: all .25s;
 }
 
 .feature-icon:hover {
-  color: #ff4c68;
+  color: #C51162;
+}
+
+.feature-title:hover {
+  color: #555;
 }
 
 /* Testimonials Section */
 
 #testimonials {
-  background-color: #ff8d68;
+  background-color: #FF4081;
   box-shadow: 0.5px 0.5px 1px 0 rgba(125,125,125,0.5);
   color: white;
 }
@@ -121,7 +126,7 @@ p {
 /* Press Section */
 
 #press {
-  background-color: #ff8d68;
+  background-color: #FF4081;
   box-shadow: 0.5px 0.5px 1px 0 rgba(125,125,125,0.5);
   padding-bottom: 7.5%;
 }
@@ -144,7 +149,7 @@ p {
 /* CTA Section */
 
 #cta {
-  background-color: #ff4c68;
+  background-color: #F50057;
   box-shadow: 0.5px 0.5px 1px 0 rgba(125,125,125,0.5);
   color: white;
 }
@@ -168,6 +173,11 @@ p {
 .footer-icon {
   color: black;
   padding: 1.5rem 0.75rem;
+  transition: all .25s;
+}
+
+.footer-icon:hover {
+  color: #555;
 }
 
 /* Media Queries */
@@ -179,7 +189,29 @@ p {
   }
 
   .phone-image {
-    transform: rotate(0);
+    margin-top: 4rem;
     position: static;
+    transform: rotate(0);
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 }
